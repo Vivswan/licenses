@@ -1,0 +1,33 @@
+# Repo-owned CI checks, called by the managed ci.yml inside the all-green
+# gate: every job here must pass before all-green goes green. Generated once
+# by Vivswan/repo-platform and never overwritten by template
+# sync, so edit freely: multiple jobs, matrices, and further local reusable
+# workflows all work.
+#
+# Two limits from running inside the `checks` caller: jobs here get no
+# secrets and are capped at the caller's permissions (contents: read), and
+# all-green only sees the aggregate result, so a job skipped by its own
+# `if:` does not fail the gate. A check that needs secrets, more
+# permissions, or must never be skippable, belongs in its own workflow wired
+# into the ruleset via .github/settings.yml.
+
+name: Checks
+
+on:
+  workflow_call:
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # Globs and rule tuning live in .markdownlint-cli2.yaml; the globs
+      # input stays at its default (*.{md,markdown}, root only), which the
+      # action still passes and cli2 unions with the config - a strict
+      # subset of the config's **/*.md today, but it would still drag in
+      # root files if the config's globs were ever narrowed.
+      # Pinned exactly: a floating v24.x can bundle a newer markdownlint
+      # whose new default-on rules would turn main red with no change
+      # here. Dependabot bumps the pin as a reviewable PR.
+      - uses: DavidAnson/markdownlint-cli2-action@v24.2.0

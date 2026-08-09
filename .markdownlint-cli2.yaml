@@ -1,0 +1,35 @@
+# The markdown files here ARE the product: canonical license texts whose
+# wording and layout are fixed once published, so lint is tuned to the
+# canonical format instead of ignoring the license files. The format's
+# summary tables and Required Notice arrive with each versioned text, so
+# the tuning below stays load-bearing even when no version file trips a
+# rule at the moment:
+# - MD013: summary tables carry full sentences per cell, so table rows
+#   are exempt from the line limit (prose stays wrapped at 80); headings
+#   are exempt too, because the guide uses full questions as headings
+#   and markdown headings cannot wrap across lines; code blocks are
+#   exempt because mermaid quoted labels must stay on one source line.
+# - MD034: the Required Notice line embeds a bare URL.
+# - MD060: the summary tables pad their cells but keep a tight |---|
+#   delimiter row, matching no single recognized column style.
+config:
+  MD013:
+    tables: false
+    headings: false
+    code_blocks: false
+  MD034: false
+  MD060: false
+
+globs:
+  - "**/*.md"
+
+ignores:
+  # Fleet-managed prose this repo cannot fix locally (sync overwrites
+  # local edits); a fleet update must not be able to redden this gate.
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - SECURITY.md
+  # Symlinks to AGENTS.md, which is linted once at its real path.
+  - CLAUDE.md
+  - .github/agents.md
+  - .github/copilot-instructions.md
