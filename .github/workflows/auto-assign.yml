@@ -14,22 +14,18 @@ on:
   pull_request:
     types: [opened, synchronize]
 
-# security-events is granted unconditionally: a reusable-workflow call is
-# statically validated against the permissions of EVERY job in the called
-# file regardless of each job's `if:`, so the alert-assignment job's
-# permissions must be grantable even where code scanning is disabled. The
-# code_scanning input below keeps that job from actually running there.
-# contents:read lets the reusable workflow read CODEOWNERS to decide who
-# gets assigned (falling back to the repo owner).
-permissions:
-  contents: read
-  issues: write
-  pull-requests: write
-  security-events: write
+# No workflow-level grants: each job below grants its reusable workflow
+# exactly what that capability needs. contents:read is CODEOWNERS
+# resolution - who gets assigned, falling back to the repo owner.
+permissions: {}
 
 jobs:
   auto-assign:
+    if: github.event_name == 'issues' || github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     uses: Vivswan/repo-platform/.github/workflows/reusable-auto-assign.yml@main
     with:
-      code_scanning: false
       issue: ${{ inputs.issue || '' }}
