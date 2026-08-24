@@ -24,12 +24,16 @@ globs:
   - "**/*.md"
 
 ignores:
-  # Fleet-managed prose this repo cannot fix locally (sync overwrites
-  # local edits); a fleet update must not be able to redden this gate.
+  # Changes to the listed fleet-managed prose cannot be fixed locally
+  # (sync overwrites local edits) and must not be able to redden this
+  # gate. The fleet reflows paragraphs to single lines, so AGENTS.md's
+  # managed half fails MD013 despite the wrapped local section below
+  # its marker.
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - SECURITY.md
-  # Symlinks to AGENTS.md, which is linted once at its real path.
+  - AGENTS.md
+  # Symlinks to AGENTS.md, which is ignored above.
   - CLAUDE.md
   - .github/agents.md
   - .github/copilot-instructions.md
