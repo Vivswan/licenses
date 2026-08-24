@@ -2,6 +2,8 @@
 
 This file provides guidance to AI coding agents working in this repository. `CLAUDE.md`, `.github/copilot-instructions.md`, and `.github/agents.md` are symlinks to this file, so edit only here.
 
+Everything above the marker at the bottom of this file is managed by Vivswan/repo-platform and overwritten by template sync; this repository's own guidance belongs below the marker.
+
 ## Project
 
 licenses: Canonical home of versioned software license texts
