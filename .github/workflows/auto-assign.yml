@@ -14,9 +14,8 @@ on:
   pull_request:
     types: [opened, synchronize]
 
-# No workflow-level grants: each job below grants its reusable workflow
-# exactly what that capability needs. contents:read is CODEOWNERS
-# resolution - who gets assigned, falling back to the repo owner.
+# No workflow-level grants: each job grants its reusable workflow exactly
+# what it needs (contents:read is CODEOWNERS resolution).
 permissions: {}
 
 jobs:
@@ -26,6 +25,6 @@ jobs:
       contents: read
       issues: write
       pull-requests: write
-    uses: Vivswan/repo-platform/.github/workflows/reusable-auto-assign.yml@main
+    uses: Vivswan/repo-platform/.github/workflows/reusable-auto-assign.yml@build
     with:
       issue: ${{ inputs.issue || '' }}

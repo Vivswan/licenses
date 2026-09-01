@@ -1,8 +1,7 @@
 # This file is managed by Vivswan/repo-platform.
 # Copier uses it to track the template source and version - do not delete.
-_commit: fc67557
+_commit: 7c0bd33
 _src_path: gh:Vivswan/repo-platform
-channel: staging
 description: Canonical home of versioned software license texts
 github_username: Vivswan
 homepage: ''
