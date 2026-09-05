@@ -29,11 +29,12 @@ ignores:
   # gate. The fleet reflows paragraphs to single lines, so AGENTS.md's
   # managed half fails MD013 despite the wrapped local section below
   # its marker.
-  - CODE_OF_CONDUCT.md
+  - .github/CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
-  - SECURITY.md
+  - .github/SECURITY.md
   - AGENTS.md
   # Symlinks to AGENTS.md, which is ignored above.
   - CLAUDE.md
   - .github/agents.md
   - .github/copilot-instructions.md
+  - .github/instructions/review.instructions.md

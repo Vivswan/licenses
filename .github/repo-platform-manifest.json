@@ -3,16 +3,19 @@
   "files": {
     ".editorconfig": {"class": "split", "grammar": "managed-region", "begin": "# BEGIN REPO-PLATFORM MANAGED", "end": "# END REPO-PLATFORM MANAGED", "hash": "98775644ebdeb9cde0670616220143adf668c1201cf4160f8f408a8e77a62cc1"},
     ".gitattributes": {"class": "split", "grammar": "managed-region", "begin": "# BEGIN REPO-PLATFORM MANAGED", "end": "# END REPO-PLATFORM MANAGED", "hash": "92725e53e7a53a282e02b075a56e2bf59424be384c53d7bf7d1116f1f8a9141e"},
-    ".github/.copier-answers.yml": {"class": "managed", "hash": "a001cba6b53a91d633ab34be80bbb03f1f77e9d73f2cb2ec74a6c7225cb0604a"},
+    ".github/.copier-answers.yml": {"class": "managed", "hash": "6bb1e8c7f52fdf1bbc685a6bc3e034588d81e138f45a91b85f6764b48f201964"},
     ".github/CODEOWNERS": {"class": "split", "grammar": "managed-region", "begin": "# BEGIN REPO-PLATFORM MANAGED", "end": "# END REPO-PLATFORM MANAGED", "hash": "331b950ff34c80af626de9342204f19c460a6fa0ae94a646d6618be66934b302"},
+    ".github/CODE_OF_CONDUCT.md": {"class": "managed", "hash": "1635b6fddff1a322424fddf12ac0d8e269541976d40b5b6bf0dbebc9c7afcf68"},
     ".github/ISSUE_TEMPLATE/bug_report.yml": {"class": "starter"},
     ".github/ISSUE_TEMPLATE/config.yml": {"class": "starter"},
     ".github/ISSUE_TEMPLATE/feature_request.yml": {"class": "starter"},
+    ".github/SECURITY.md": {"class": "split", "grammar": "managed-region", "begin": "<!-- BEGIN REPO-PLATFORM MANAGED -->", "end": "<!-- END REPO-PLATFORM MANAGED -->", "hash": "4a15453202c90a90bf6b0f603ce4416ab81d98515620ca3ee5d970ca1b2a8553"},
     ".github/actionlint.yaml": {"class": "starter"},
     ".github/agents.md": {"class": "managed", "hash": "79909577a70fc4971a7fcfd3cbec6a1af7182ca2dadc87f2979dce5e28f93ca0"},
     ".github/copilot-instructions.md": {"class": "managed", "hash": "79909577a70fc4971a7fcfd3cbec6a1af7182ca2dadc87f2979dce5e28f93ca0"},
     ".github/dependabot.yml": {"class": "managed", "hash": "477a76f5cd1e3adc00e8b8596e91b74e124c1502b9a40ccf097dfdeb634d85bc"},
-    ".github/repo-platform-manifest.json": {"class": "managed", "hash": null, "commit": "dbb1eda"},
+    ".github/instructions/review.instructions.md": {"class": "managed", "hash": "57c606b81a29fe06a6767b57f57f81df140fa335d9b2c688224d6c3132099970"},
+    ".github/repo-platform-manifest.json": {"class": "managed", "hash": null, "commit": "6bf5452"},
     ".github/settings.yml": {"class": "starter"},
     ".github/workflows/auto-assign.yml": {"class": "managed", "hash": "92de7440b9ffb5a708760f8d4bdff0f42b61fa5d0b96d50dff5b8e9a44f9641f"},
     ".github/workflows/checks.yml": {"class": "starter"},
@@ -27,8 +30,6 @@
     ".yamllint": {"class": "managed", "hash": "1e533293401ff3d0ee4662292995fd932d2998142ce594fb14e65a8d3a3140fb"},
     "AGENTS.md": {"class": "split", "grammar": "managed-region", "begin": "<!-- BEGIN REPO-PLATFORM MANAGED -->", "end": "<!-- END REPO-PLATFORM MANAGED -->", "hash": "8b3936cdbf9c035455ad28fcd1ea2f0f02cf67b6f8b0081c88be4f739df7b0b3"},
     "CLAUDE.md": {"class": "managed", "hash": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9"},
-    "CODE_OF_CONDUCT.md": {"class": "managed", "hash": "1635b6fddff1a322424fddf12ac0d8e269541976d40b5b6bf0dbebc9c7afcf68"},
-    "CONTRIBUTING.md": {"class": "split", "grammar": "managed-region", "begin": "<!-- BEGIN REPO-PLATFORM MANAGED -->", "end": "<!-- END REPO-PLATFORM MANAGED -->", "hash": "e2b00469bb33c750222ef605a000e323ba48793562dea34e2235ee813702279a"},
-    "SECURITY.md": {"class": "split", "grammar": "managed-region", "begin": "<!-- BEGIN REPO-PLATFORM MANAGED -->", "end": "<!-- END REPO-PLATFORM MANAGED -->", "hash": "4a15453202c90a90bf6b0f603ce4416ab81d98515620ca3ee5d970ca1b2a8553"}
+    "CONTRIBUTING.md": {"class": "split", "grammar": "managed-region", "begin": "<!-- BEGIN REPO-PLATFORM MANAGED -->", "end": "<!-- END REPO-PLATFORM MANAGED -->", "hash": "ad3ad1180520c232d16bf869a05e7b2352d0b81a39c7055bed231a6d34356e0c"}
   }
 }
