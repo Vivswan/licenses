@@ -874,7 +874,7 @@ your copy also makes the use the university's.
 
 ## About the license itself
 
-### If a version 1.1.0 of this license comes out later, does the software I already have switch to the new terms automatically?
+### If a newer version of this license comes out later, does the software I already have switch to the new terms automatically?
 
 **No**. The license file names its exact version (1.1.0) and links that
 version's canonical URL; each versioned text is written once and never edited.
