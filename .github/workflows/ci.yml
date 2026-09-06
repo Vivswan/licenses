@@ -42,7 +42,7 @@ jobs:
       issues: read
       vulnerability-alerts: read
     with:
-      modules: '["agents", "issue-templates", "pr-title", "auto-assign", "settings-sync", "custom-license"]'
+      modules: '["issue-templates", "pr-title", "custom-license"]'
       private: false
       codeql-languages: '[]'
 
