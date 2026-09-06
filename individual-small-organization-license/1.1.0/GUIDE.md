@@ -613,13 +613,18 @@ from it (Your Own Work).
 
 ### If I open a pull request against the licensor's repo, what rights do I give away?
 
-Add: you also waive moral rights in the contribution (or, where waiver is
-unavailable, consent to every exercise of the granted rights), and you
-represent you are entitled to grant these licenses; any organization on whose
-behalf you submit, or that authorized the submission, grants the same.
-Otherwise as stated: perpetual, irrevocable, transferable copyright license
-(sublicense/relicense under any terms, commercial included) plus a
-downstream-reaching patent license; opt-outs are correct.
+**Quite a lot**, unless you opt out. Submitting a change for inclusion - a
+pull request, a patch, or code offered in an issue or review, accepted or not -
+grants the licensor a perpetual, irrevocable, transferable copyright license to
+use, modify, distribute, sublicense, and relicense it under any terms,
+commercial included, plus a patent license for claims the contribution
+infringes that reaches everyone who receives it from the licensor. You also
+waive moral rights in the contribution (or, where waiver is unavailable,
+consent to every exercise of the granted rights) and represent that you are
+entitled to grant all this; any organization on whose behalf you submit, or
+that authorized the submission, grants the same. To keep code out of this,
+state conspicuously when you submit it that it is not a contribution, or
+identify it as someone else's material.
 
 ## Output
 
