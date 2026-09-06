@@ -984,16 +984,9 @@ control them, count as the organization's own.
 
 ## Changes from 1.0.0
 
-Version 1.1.0 closes five gaps found in a review of the 1.0.0 text.
-Everything else is unchanged.
-
-| Gap in 1.0.0 | What 1.1.0 says |
-|---|---|
-| The Individual License had no ban on providing the software's functionality to others, so a one-person business could sell the tool as a hosted service although the Small Organization License forbids exactly that | The Individual License excludes providing the software or its functionality to others and running it within a product or service offered to others; using it as your own tool, including in work for others, stays licensed |
-| "Output" had no carve-out for the software's own code, so a tool that emits its runtime or templates could pass copies of itself to anyone as output | Output never includes the software or any part of it, or anything that provides its functionality, however produced; fragments of its expression woven into what it produces remain output |
-| Income was measured on the prior tax year alone, so a company formed in mid-December had a zero-income stub year and qualified as small for its first full year regardless of income | Income is measured both on the prior tax year and on the trailing twelve months ending with the last calendar month before the use (from formation for younger organizations), and both must stay under the threshold |
-| Patent Defense attributed claims only between organizations, so a founder could sue in their own name while their company kept its patent license | A claim by a natural person who controls an organization counts as that organization's claim, and a claim by an organization an individual controls counts as the individual's |
-| Violation notices were counted per legal person, so each subsidiary in a group had its own once-per-36-months cure | Notice histories are shared across the group and with the natural persons who control it |
+Version 1.1.0 closes five gaps found in a review of the 1.0.0 text and
+changes nothing else. The version history, with what each version
+changed, lives in the license's [CHANGELOG.md](../CHANGELOG.md).
 
 ## Corrections
 

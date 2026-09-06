@@ -10,6 +10,7 @@ decision charts. Corrections and changes become new versions.
   ([guide](./1.1.0/GUIDE.md), ending with the changes from 1.0.0)
 - [1.0.0](./1.0.0/LICENSE.md) - the previous version
   ([guide](./1.0.0/GUIDE.md))
+- [CHANGELOG.md](./CHANGELOG.md) - what each version changed
 
 To use this license for your own software, see the reuse terms in the
 repository [LICENSE.md](../LICENSE.md): copy the versioned text, keep
