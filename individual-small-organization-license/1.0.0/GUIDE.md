@@ -2,7 +2,7 @@
 
 **Non-binding.** This guide answers, in plain words, the questions
 people actually ask about the
-[Individual and Small Organization License](./1.0.0.md). It is not part
+[Individual and Small Organization License](./LICENSE.md). It is not part
 of the license: the license text governs, and if this guide and the
 license ever disagree, the license wins.
 
@@ -556,15 +556,36 @@ platform's terms alone and do not expand anyone's licenses under these terms;
 organizations still get nothing beyond the small-organization,
 service-provider, and output grants.
 
+### A company that can't use it pays an individual to fork and publish it, then "buys" the fork. Does the company get a license that way?
+
+**No**, twice over. The company's licenses come only from the licensor,
+never from the fork author: recipients of a fork are licensed directly under
+these terms, and a fork author cannot grant, sublicense, or transfer any
+license (Downstream Recipients, No Other Rights). A fork is something built
+on the software, so the company gets nothing beyond the small-organization,
+service-provider, and output grants for it either (Organizations). Paying
+for or directing the fork also makes it the company's own use, and the
+individual's licenses never covered use an organization pays for, requires,
+or directs, so the individual is unlicensed for that work too. The only
+thing the individual can sell on their own terms is their own additions
+when they contain none of the software's expression and are shared apart
+from it (Your Own Work).
+
 ### If I open a pull request against the licensor's repo, what rights do I give away?
 
-Add: you also waive moral rights in the contribution (or, where waiver is
-unavailable, consent to every exercise of the granted rights), and you
-represent you are entitled to grant these licenses; any organization on whose
-behalf you submit, or that authorized the submission, grants the same.
-Otherwise as stated: perpetual, irrevocable, transferable copyright license
-(sublicense/relicense under any terms, commercial included) plus a
-downstream-reaching patent license; opt-outs are correct.
+**Quite a lot**, unless you opt out. Submitting a change for inclusion - a
+pull request, a patch, or code offered in an issue or review, accepted or not -
+grants the licensor a perpetual, irrevocable, transferable copyright license to
+use, modify, distribute, sublicense, and relicense it under any terms,
+commercial included, plus a patent license for claims the contribution
+infringes that reaches everyone who receives it from the licensor. You also
+waive moral rights in the contribution (or, where waiver is unavailable,
+consent to every exercise of the granted rights) and represent that you are
+entitled to grant all this; any organization on whose behalf you submit, or
+that authorized the submission, grants the same. To keep code out of this,
+state conspicuously when you submit it that it is not a contribution, or
+identify it as someone else's work, naming its source and, where you know
+them, its license terms.
 
 ## Output
 
@@ -806,7 +827,7 @@ these same terms.
 
 **It depends** on nothing you have to guess: the canonical text lives at the
 URL printed at the top of the license
-(github.com/Vivswan/licenses/.../individual-small-organization-license/1.0.0.md).
+(github.com/Vivswan/licenses/.../individual-small-organization-license/1.0.0/LICENSE.md).
 Distribution is only allowed under these same terms with the required notices,
 so an altered copy in a fork does not change what governs - the named
 versioned text does.
@@ -895,6 +916,6 @@ claims by affiliates under common control count as the organization's own.
 ## Corrections
 
 This guide is maintained at
-<https://github.com/Vivswan/licenses/blob/main/individual-small-organization-license/GUIDE-1.0.0.md>.
+<https://github.com/Vivswan/licenses/blob/main/individual-small-organization-license/1.0.0/GUIDE.md>.
 If a scenario here seems to contradict the license text, trust the text
 and open an issue.
