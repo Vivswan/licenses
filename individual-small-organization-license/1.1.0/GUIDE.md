@@ -937,8 +937,9 @@ as your permitted uses; it is not a general patent grant.
 organization, claims by its affiliates count as its own), your patent license
 ends immediately. If your employer or its affiliates make the claim, your
 patent license ends only for use in the course of work for those organizations -
-your personal-use patent license survives, unless you control the employer, in
-which case its claim counts as your own and your whole patent license ends.
+your personal-use patent license survives, unless you control the organization
+that made the claim, whether the employer or one of its affiliates, in which
+case its claim counts as your own and your whole patent license ends.
 Your copyright license is not the one this section ends.
 
 ### I personally own a patent and my company uses the software. If I sue in my own name, does my company keep its patent license?
