@@ -26,8 +26,9 @@ licenses: Canonical home of versioned software license texts
 <!-- repo-platform:local-section -->
 
 - The markdown files are the product: versioned license texts, one
-  directory per license, one file per released version. Published
-  version files are immutable; corrections become a new version file.
+  directory per license, one directory per released version holding
+  `LICENSE.md` and its non-binding `GUIDE.md`. Published license texts
+  are immutable; corrections become a new version.
 - Never reflow a license's canonical text: the summary table layout
   and Required-Notice bare URL its versioned texts carry are part of
   the canonical format (markdownlint is tuned for them in

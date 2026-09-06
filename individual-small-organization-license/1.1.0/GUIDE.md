@@ -1,8 +1,8 @@
-# Guide to the Individual and Small Organization License 1.0.0
+# Guide to the Individual and Small Organization License 1.1.0
 
 **Non-binding.** This guide answers, in plain words, the questions
 people actually ask about the
-[Individual and Small Organization License](./1.0.0.md). It is not part
+[Individual and Small Organization License](./LICENSE.md). It is not part
 of the license: the license text governs, and if this guide and the
 license ever disagree, the license wins.
 
@@ -44,6 +44,11 @@ flowchart TD
     E -- No --> W
 ```
 
+Whatever path you take through this chart, one thing is never covered by
+the Individual License: offering the software or its functionality to
+others as a product or service. See [Freelancers and sole
+proprietors](#freelancers-and-sole-proprietors).
+
 For an organization:
 
 ```mermaid
@@ -71,6 +76,7 @@ flowchart TD
 - [Contributing code](#contributing-code)
 - [Special cases](#special-cases)
 - [About the license itself](#about-the-license-itself)
+- [Changes from 1.0.0](#changes-from-100)
 
 ## Using it at your job
 
@@ -176,7 +182,23 @@ configuration endorsed for a team's use is different - that is adoption.
 including your own freelance and sole-proprietor work - as long as your trades
 and businesses, counted together with any organizations you control, stay
 under 100 people and 10,000,000 USD in yearly income. Unlike small
-organizations, individuals face no ban on client deliverables.
+organizations, individuals face no ban on client deliverables. What you
+may not do is offer the software itself or its functionality to others
+as a product or service; see the next question.
+
+### I'm a one-person business. Can I host the tool and sell its results per job, or put it behind an API for customers?
+
+**No**. The Individual License covers using the software as your own tool,
+including in work you do for others, but it excludes providing the
+software or its functionality to others and running it within a product
+or service offered to others - hosted, embedded, or operated on their
+behalf. Selling per-job results of running the tool on customers'
+inputs, exposing it through an interface or an agent, or wrapping it in a
+service are all offering its functionality, whatever the pricing model.
+The line: you decide what to build and use the tool to build it (fine);
+the customer decides what the tool should do and you run it for them
+(not fine). A company that wants the tool's functionality must license
+it itself.
 
 ### My big client requires me to use this specific tool, or pays for my subscription to it. Does that change anything?
 
@@ -256,12 +278,15 @@ business until 36 months pass.
 
 ### I started freelancing three months ago and have no prior tax year. How is my income measured against the 10M threshold?
 
-**It depends** on the dates: with no prior tax year, income is counted from
-when your earliest current trade or business began to the day of the use, then
-annualized, treating any period shorter than one full month as one full month.
-So three months of income is multiplied out to a twelve-month figure. Your
-deemed organization has a prior tax year only if a trade or business of yours
-operated during it.
+**It depends** on the dates. Income is measured two ways, and both must stay
+under the threshold: your prior tax year (annualized if short), when your
+deemed organization has one, and the twelve months ending with the last
+calendar month before the use - or, for a business younger than that, from
+when it began to the day of the use, annualized. With no prior tax year the
+first measure counts nothing, so three months of income is multiplied out to
+a twelve-month figure, treating any period shorter than one full month as one
+full month. Your deemed organization has a prior tax year only if a trade or
+business of yours operated during it.
 
 ### My hobby project brings in sponsorship and donation money on the side. Does that count toward my personal 10M threshold?
 
@@ -353,12 +378,22 @@ combined, so a small subsidiary of a large parent does not qualify.
 
 ### This year's revenue will pass 10M USD, but last year's was under. Do we still qualify right now?
 
-**Yes**, on the income test. Income is counted from each organization's prior
-tax year (annualized if short), so a mid-year jump only counts once it lands
-in the measured year. Headcount and group composition, by contrast, are
-counted as they stand at each use - crossing 100 people, or a
-threshold-breaking acquisition, ends qualification that day and starts the
-90-day wind-down.
+**Only until the trailing twelve months cross it.** Income is measured two
+ways, and both must stay under the threshold: your prior tax year (annualized
+if short) and the twelve months ending with the last calendar month before the
+use. A mid-year jump therefore counts as soon as the trailing twelve months
+pass 10M, not only when the next tax year begins; on that day qualification
+ends and the 90-day wind-down starts. Headcount and group composition are
+likewise counted as they stand at each use - crossing 100 people, or a
+threshold-breaking acquisition, ends qualification that day.
+
+### We incorporated in mid-December with a calendar tax year, earned nothing that year, and are now earning far more than 10M. Does the zero-income stub year make us small?
+
+**No**. The prior tax year is only one of two measures, and both must pass.
+The other is the twelve months ending with the last calendar month before the
+use (from formation, annualized, when the company is younger than that), so a
+near-empty stub year cannot hide current income. The same rule applies to an
+individual's trades and businesses.
 
 ### Can our small organization fork the software or modify it for our needs?
 
@@ -404,15 +439,20 @@ group.
 formation to the day of the use and annualized, treating any period shorter
 than one full month as one full month. So a startup earning 1M in its first
 four months is annualized to 3M and qualifies; the same rule applies to an
-individual's trades and businesses.
+individual's trades and businesses. Once you do have a prior tax year, that
+year (annualized if short) must also stay under the threshold. The second
+measure runs from formation to the day of the use, annualized, until the
+company is older than the trailing window, and over the twelve months ending
+with the last calendar month before the use after that - so a December
+startup's near-empty first tax year does not help it in January.
 
 ### Is the 10,000,000 USD threshold fixed forever, or does it rise with inflation?
 
 **No**, it is not fixed. The threshold is adjusted for inflation from the 2026
-annual average of the US CPI-U to the annual average for the calendar year
-your prior tax year ended in (or, with no prior tax year, the most recent
-completed calendar year). Until the BLS publishes the 2026 annual average, it
-applies unadjusted at 10M.
+annual average of the US CPI-U to the annual average for the most recent
+calendar year ended before the day of the use - one date for the whole group
+and both income measures, whatever tax years its members keep. Until the BLS
+publishes the 2026 annual average, it applies unadjusted at 10M.
 
 ## Larger organizations
 
@@ -556,6 +596,21 @@ platform's terms alone and do not expand anyone's licenses under these terms;
 organizations still get nothing beyond the small-organization,
 service-provider, and output grants.
 
+### A company that can't use it pays an individual to fork and publish it, then "buys" the fork. Does the company get a license that way?
+
+**No**, twice over. The company's licenses come only from the licensor,
+never from the fork author: recipients of a fork are licensed directly under
+these terms, and a fork author cannot grant, sublicense, or transfer any
+license (Downstream Recipients, No Other Rights). A fork is something built
+on the software, so the company gets nothing beyond the small-organization,
+service-provider, and output grants for it either (Organizations). Paying
+for or directing the fork also makes it the company's own use, and the
+individual's licenses never covered use an organization pays for, requires,
+or directs, so the individual is unlicensed for that work too. The only
+thing the individual can sell on their own terms is their own additions
+when they contain none of the software's expression and are shared apart
+from it (Your Own Work).
+
 ### If I open a pull request against the licensor's repo, what rights do I give away?
 
 Add: you also waive moral rights in the contribution (or, where waiver is
@@ -573,7 +628,9 @@ downstream-reaching patent license; opt-outs are correct.
 **Yes**. Output is whatever the software produces when run or used as
 designed, and as an individual you may generate, keep, use, and publish it.
 The fork and distribution rules do not apply to output as such - only to the
-software itself.
+software itself. One carve-out: copies of the software or its parts are never
+output, even when the tool emits them; see the export, eject, or vendor mode
+question below.
 
 ### I generated files with the tool - can I hand them to my client, even a huge corporation?
 
@@ -625,6 +682,17 @@ as using the software. Your use stays your own individual use.
 license to the software itself. If the client wants to run the tool, it needs
 its own license - individual, small-organization, or a separate commercial
 one.
+
+### The tool has an export, eject, or vendor mode that writes its own runtime or engine into my project. Is that copy 'output' my client can keep?
+
+**No**. Output never includes the software or any part of it - source,
+binaries, build artifacts, components, or anything that provides the
+software's functionality - however produced, even when the software emits,
+copies, exports, or builds them as designed. That material stays the
+software: your client's output license does not reach it, and sharing it is
+governed by the Distribution License, same terms and notices included.
+Fragments of the software's expression woven into what it produces (a
+template's boilerplate text, say) are still output.
 
 ### The generated files contain boilerplate text copied from the software's own templates - can I still publish them?
 
@@ -772,7 +840,19 @@ use, and only once per adoption.
 your licenses continue if you come into full compliance and take practical
 steps to correct past violations within 32 days of the notice; otherwise they
 all end immediately. A notice about use the terms actually license (including
-the work grace or wind-down) does not count as a violation notice.
+the work grace or wind-down) does not count as a violation notice. Notice
+histories are shared across a group: a notice to any organization in your
+group, to an organization you control, or (for an organization) to a natural
+person who controls you counts as a notice to you.
+
+### Our sister company was notified and cured last year. If our company is notified now, do we get our own 32-day cure?
+
+**No**. Notice histories are shared across the group - every organization
+under common control, every organization you control, and, for an
+organization, the natural persons who control it. Your sister company's notice
+counts as one you received, so a valid notice to you within 36 months of it
+ends your licenses with no cure period. One cure per group per 36 months, not
+one per entity.
 
 ### My company bought a separate commercial license from the licensor. Do these public terms still matter to us?
 
@@ -796,7 +876,7 @@ your copy also makes the use the university's.
 
 ### If a version 1.1.0 of this license comes out later, does the software I already have switch to the new terms automatically?
 
-**No**. The license file names its exact version (1.0.0) and links that
+**No**. The license file names its exact version (1.1.0) and links that
 version's canonical URL; each versioned text is written once and never edited.
 You hold the version that came with your copy. A newer version applies only to
 copies distributed under it, and anyone sharing the software must pass along
@@ -806,7 +886,7 @@ these same terms.
 
 **It depends** on nothing you have to guess: the canonical text lives at the
 URL printed at the top of the license
-(github.com/Vivswan/licenses/.../individual-small-organization-license/1.0.0.md).
+(github.com/Vivswan/licenses/.../individual-small-organization-license/1.1.0/LICENSE.md).
 Distribution is only allowed under these same terms with the required notices,
 so an altered copy in a fork does not change what governs - the named
 versioned text does.
@@ -857,8 +937,17 @@ as your permitted uses; it is not a general patent grant.
 organization, claims by its affiliates count as its own), your patent license
 ends immediately. If your employer or its affiliates make the claim, your
 patent license ends only for use in the course of work for those organizations -
-your personal-use patent license survives. Your copyright license is not the
-one this section ends.
+your personal-use patent license survives, unless you control the employer, in
+which case its claim counts as your own and your whole patent license ends.
+Your copyright license is not the one this section ends.
+
+### I personally own a patent and my company uses the software. If I sue in my own name, does my company keep its patent license?
+
+**No**. A written claim by a natural person who controls an organization, or
+who controls one of its affiliates, counts as that organization's claim, and
+the organization's patent license ends. The reverse also holds: if you are an
+individual and an organization you control - a holding company, say - makes
+the claim, your own patent license ends.
 
 ### Can I tweak the license text (say, raise the 100-person threshold) and still call it the Individual and Small Organization License?
 
@@ -890,11 +979,25 @@ immediately, with no cure period.
 **No**. Any written claim that the software infringes or contributes to
 infringement of any patent ends your patent license immediately, and the
 section makes no exception for defensive counterclaims. For organizations,
-claims by affiliates under common control count as the organization's own.
+claims by affiliates under common control, and by the natural persons who
+control them, count as the organization's own.
+
+## Changes from 1.0.0
+
+Version 1.1.0 closes five gaps found in a review of the 1.0.0 text.
+Everything else is unchanged.
+
+| Gap in 1.0.0 | What 1.1.0 says |
+|---|---|
+| The Individual License had no ban on providing the software's functionality to others, so a one-person business could sell the tool as a hosted service although the Small Organization License forbids exactly that | The Individual License excludes providing the software or its functionality to others and running it within a product or service offered to others; using it as your own tool, including in work for others, stays licensed |
+| "Output" had no carve-out for the software's own code, so a tool that emits its runtime or templates could pass copies of itself to anyone as output | Output never includes the software or any part of it, or anything that provides its functionality, however produced; fragments of its expression woven into what it produces remain output |
+| Income was measured on the prior tax year alone, so a company formed in mid-December had a zero-income stub year and qualified as small for its first full year regardless of income | Income is measured both on the prior tax year and on the trailing twelve months ending with the last calendar month before the use (from formation for younger organizations), and both must stay under the threshold |
+| Patent Defense attributed claims only between organizations, so a founder could sue in their own name while their company kept its patent license | A claim by a natural person who controls an organization counts as that organization's claim, and a claim by an organization an individual controls counts as the individual's |
+| Violation notices were counted per legal person, so each subsidiary in a group had its own once-per-36-months cure | Notice histories are shared across the group and with the natural persons who control it |
 
 ## Corrections
 
 This guide is maintained at
-<https://github.com/Vivswan/licenses/blob/main/individual-small-organization-license/GUIDE-1.0.0.md>.
+<https://github.com/Vivswan/licenses/blob/main/individual-small-organization-license/1.1.0/GUIDE.md>.
 If a scenario here seems to contradict the license text, trust the text
 and open an issue.
