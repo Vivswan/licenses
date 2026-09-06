@@ -624,7 +624,8 @@ consent to every exercise of the granted rights) and represent that you are
 entitled to grant all this; any organization on whose behalf you submit, or
 that authorized the submission, grants the same. To keep code out of this,
 state conspicuously when you submit it that it is not a contribution, or
-identify it as someone else's material.
+identify it as someone else's work, naming its source and, where you know
+them, its license terms.
 
 ## Output
 
