@@ -1,4 +1,6 @@
-# Generated once by repo-platform and repo-owned from then on: the sync reads this file and never rewrites it.
+# This repository's fleet registration. Generated once by the fleet sync
+# and repo-owned from then on: the sync reads this file and never
+# rewrites it.
 modules:
   - issue-templates
   - pr-title
