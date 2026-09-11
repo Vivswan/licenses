@@ -1,7 +1,6 @@
-# Repo-owned: written once by Vivswan/repo-platform, never
-# overwritten by a later sync. Packaging, asset uploads, and note edits
-# go here; publishing waits for every job, and every asset uploaded here
-# is attested at publish time.
+# Repo-owned: written once by the fleet sync, never overwritten by a later
+# sync. Packaging, asset uploads, and note edits go here; publishing waits
+# for every job, and every asset uploaded here is attested at publish time.
 
 name: Update Release
 
