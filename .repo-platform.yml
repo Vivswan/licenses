@@ -2,7 +2,6 @@
 # and repo-owned from then on: the sync reads this file and never
 # rewrites it.
 modules:
-  - issue-templates
   - pr-title
   - custom-license
 project:
