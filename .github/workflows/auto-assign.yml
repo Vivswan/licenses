@@ -32,6 +32,6 @@ jobs:
       contents: read
       issues: write
       pull-requests: write
-    uses: Vivswan/repo-platform/.github/workflows/reusable-auto-assign.yml@build
+    uses: Vivswan/repo-platform/.github/workflows/reusable-auto-assign.yml@stable
     with:
       issue: ${{ inputs.issue || '' }}
