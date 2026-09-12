@@ -30,12 +30,7 @@ licenses: Canonical home of versioned software license texts
 <!-- END REPO-PLATFORM MANAGED -->
 
 - The markdown files are the product: versioned license texts, one
-  directory per license, one directory per released version holding
-  `LICENSE.md` and its non-binding `GUIDE.md`. Published license texts
-  are immutable; corrections become a new version.
-- Never reflow a license's canonical text: the summary table layout
-  and Required-Notice bare URL its versioned texts carry are part of
-  the canonical format (markdownlint is tuned for them in
-  `.markdownlint-cli2.yaml`).
-- Lint locally with `bunx markdownlint-cli2` (globs live in the
-  config); wrap new prose at 80 columns.
+  directory per license, one per released version. A published
+  `LICENSE.md` is immutable; a correction is a new version.
+- Never reflow a published license's text: its layout is canonical
+  (`.markdownlint-cli2.yaml` is tuned to it, not the other way round).
