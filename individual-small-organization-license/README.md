@@ -1,14 +1,17 @@
 # Individual and Small Organization License
 
 The canonical versioned texts of the Individual and Small Organization
-License live here. Each version is one directory holding `LICENSE.md`,
-the binding text, written once and never edited - corrections and
-changes to it become new versions - and `GUIDE.md`, a non-binding
-plain-language guide with worked examples and decision charts, which
-may be clarified in place.
+License live here. Each version is one directory holding:
+
+- `LICENSE.md`, the binding text, written once and never edited;
+  corrections and changes become new versions.
+- `GUIDE.md`, a non-binding plain-language guide with worked examples
+  and decision charts, clarified in place.
+
+Versions:
 
 - [1.1.0](./1.1.0/LICENSE.md) - the current version
-  ([guide](./1.1.0/GUIDE.md), ending with the changes from 1.0.0)
+  ([guide](./1.1.0/GUIDE.md), including the changes from 1.0.0)
 - [1.0.0](./1.0.0/LICENSE.md) - the previous version
   ([guide](./1.0.0/GUIDE.md))
 - [CHANGELOG.md](./CHANGELOG.md) - what each version changed

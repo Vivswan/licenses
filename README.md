@@ -3,11 +3,14 @@
 Canonical home of versioned software license texts.
 
 Each license lives in its own directory, one directory per released
-version. The binding text, `<license>/X.Y.Z/LICENSE.md`, is written
-once and never edited - a correction arrives as a new version. Its
-non-binding guide, `<license>/X.Y.Z/GUIDE.md`, may be clarified in
-place. The version linked from a repository's `LICENSE.md` canonical
-URL is the text that governs that repository.
+version:
+
+- `<license>/X.Y.Z/LICENSE.md` is the binding text, written once and
+  never edited; a correction arrives as a new version.
+- `<license>/X.Y.Z/GUIDE.md` is its non-binding guide, clarified in
+  place.
+- The version a repository's `LICENSE.md` links by canonical URL is
+  the text that governs that repository.
 
 Current licenses:
 
