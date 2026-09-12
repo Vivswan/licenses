@@ -3,9 +3,8 @@
 Required Notice: Copyright Vivswan Shah (https://github.com/Vivswan)
 
 Everything in this repository is offered under these terms, except
-third-party material under its own license - the Contributor Covenant
-code of conduct, and anything else identified as someone else's work -
-which stays under its own terms.
+third-party material identified as someone else's work, which stays
+under its own license.
 
 ## License Texts
 
