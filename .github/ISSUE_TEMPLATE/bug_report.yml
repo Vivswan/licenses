@@ -17,8 +17,9 @@ body:
     attributes:
       label: Which file
       description: >-
-        A published LICENSE.md is immutable, so a fix there becomes a new
-        version; a GUIDE.md is clarified in place.
+        A published versioned LICENSE.md is immutable, so a fix there
+        becomes a new version; guides and repository-level files are
+        fixed in place.
       options:
         - LICENSE.md (the binding text)
         - GUIDE.md (the non-binding guide)

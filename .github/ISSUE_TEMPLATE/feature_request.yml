@@ -5,9 +5,10 @@ body:
   - type: dropdown
     id: text
     attributes:
-      label: Which license
+      label: Which text
       options:
-        - Individual and Small Organization License (current version)
+        - Individual and Small Organization License 1.1.0 (current)
+        - Individual and Small Organization License 1.0.0
         - A new license text
     validations:
       required: true
