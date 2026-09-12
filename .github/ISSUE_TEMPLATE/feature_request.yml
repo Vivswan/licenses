@@ -1,24 +1,40 @@
-name: Feature request
-description: Suggest a new feature or improvement
+name: Question or change request
+description: A situation the license or its guide does not answer, or a change to the terms
 labels: [enhancement]
 body:
-  - type: textarea
-    id: problem
+  - type: dropdown
+    id: text
     attributes:
-      label: Problem / use case
-      description: What are you trying to do that you can't today?
+      label: Which text
+      options:
+        - Individual and Small Organization License 1.1.0 (current)
+        - Individual and Small Organization License 1.0.0
+        - A new license text
+    validations:
+      required: true
+  - type: textarea
+    id: situation
+    attributes:
+      label: Your situation
+      description: >-
+        Who you are (individual, organization size and income band) and what
+        you want to do with the software. The guide's questions are written
+        from situations like this.
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: What the text says today
+      description: >-
+        The section or guide question you read, and why it leaves your
+        situation open or gives an answer you think is wrong.
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed solution
-    validations:
-      required: true
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives considered (optional)
-      description: Workarounds you've tried, or other designs you ruled out.
+      label: Proposed change (optional)
+      description: New or reworded terms, or a new guide question and answer.
     validations:
       required: false

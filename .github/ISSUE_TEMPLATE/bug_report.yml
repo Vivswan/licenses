@@ -1,43 +1,51 @@
-name: Bug report
-description: Something isn't working
+name: Error in a license text or guide
+description: A mistake, ambiguity, or contradiction in a published text
 labels: [bug]
 body:
-  - type: textarea
-    id: what-happened
+  - type: dropdown
+    id: text
     attributes:
-      label: What happened
-      description: Actual vs expected behavior.
+      label: Which text
+      options:
+        - Individual and Small Organization License 1.1.0
+        - Individual and Small Organization License 1.0.0
+        - Repository-level (root LICENSE.md, README, CHANGELOG)
+    validations:
+      required: true
+  - type: dropdown
+    id: file
+    attributes:
+      label: Which file
+      description: >-
+        A published versioned LICENSE.md is immutable, so a fix there
+        becomes a new version; guides and repository-level files are
+        fixed in place.
+      options:
+        - LICENSE.md (the binding text)
+        - GUIDE.md (the non-binding guide)
+        - Other
     validations:
       required: true
   - type: textarea
-    id: repro
+    id: passage
     attributes:
-      label: Steps to reproduce
-      placeholder: |
-        1. ...
-        2. ...
-        3. ...
-    validations:
-      required: true
-  - type: input
-    id: version
-    attributes:
-      label: Version
-      description: Release version or commit.
-    validations:
-      required: true
-  - type: input
-    id: environment
-    attributes:
-      label: Environment
-      description: OS, runtime versions, and anything else relevant.
-    validations:
-      required: false
-  - type: textarea
-    id: logs
-    attributes:
-      label: Logs (optional)
-      description: Relevant log output. **Redact anything that looks like a credential or key.**
+      label: The passage
+      description: Quote the exact wording, with its section heading.
       render: text
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: >-
+        The error, the two readings an ambiguous sentence allows, or the
+        guide answer that contradicts the license text.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording (optional)
     validations:
       required: false
