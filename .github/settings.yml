@@ -27,6 +27,7 @@ repository:
   allow_auto_merge: true
   enable_vulnerability_alerts: true
 labels:
+  _undeclared: delete
   entries:
     - name: dependencies
       color: 0366d6
@@ -49,8 +50,8 @@ labels:
     - name: security-nightly
       color: 1d76db
       description: Automated nightly security scan findings
-  _undeclared: delete
 rulesets:
+  _undeclared: keep
   entries:
     - name: pr-title
       target: branch
@@ -123,4 +124,3 @@ rulesets:
         - type: deletion
         - type: required_linear_history
       bypass_actors: []
-  _undeclared: keep
