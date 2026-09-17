@@ -12,7 +12,6 @@ repository:
   description: "Canonical home of versioned software license texts"
   # Declared even when empty: the apply manages only declared keys, so
   # this keeps it healing out-of-band edits.
-  homepage: ""
   topics: "licenses"
   private: false
 
