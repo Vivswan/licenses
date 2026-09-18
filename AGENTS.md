@@ -27,8 +27,5 @@ licenses: Canonical home of versioned software license texts
 <!-- Add project-specific instructions below the END marker; they are this repository's own and survive every sync. -->
 <!-- END REPO-PLATFORM MANAGED -->
 
-- The markdown files are the product: versioned license texts, one
-  directory per license, one per released version. A published
-  `LICENSE.md` is immutable; a correction is a new version.
-- Never reflow a published license's text: its layout is canonical
-  (`.markdownlint-cli2.yaml` is tuned to it, not the other way round).
+- The markdown files are the product: versioned license texts, one directory per license, one per released version. A published `LICENSE.md` is immutable; a correction is a new version.
+- Never reflow a published license's text: its layout is canonical (`.markdownlint-cli2.yaml` is tuned to it, not the other way round).
